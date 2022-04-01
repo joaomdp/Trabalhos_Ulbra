@@ -4,6 +4,7 @@
 int main()
 {
     float dep, taxa, rend, total;
+    printf ( " ========== Programa para ver o valor de rendimento de um deposito ==========\n\n " );
 
     printf("Digite o valor do deposito: ");
     scanf("%f", &dep);

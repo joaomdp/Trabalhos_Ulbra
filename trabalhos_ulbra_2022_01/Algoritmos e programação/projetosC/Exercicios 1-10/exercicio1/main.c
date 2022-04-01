@@ -5,6 +5,8 @@ int main(void)
 {
     int n1, n2, n3, n4, soma;
 
+    printf( " ========== Programa para somar numeros inteiros ========== \n\n " ) ;
+
     printf("Digite um valor: ");
     scanf("%d", &n1);
 
@@ -19,7 +21,7 @@ int main(void)
 
     soma = n1 + n2 + n3 + n4;
 
-    printf("O valor da soma = %d\n", soma);
+    printf("O valor da soma = %d\n\n", soma);
 
     system ("pause");
     return 0;

@@ -4,8 +4,9 @@
 int main()
 {
     float sal, salreceber, imp;
+    printf ( " ========== Programa para ver o salario base a receber  ==========\n\n " );
 
-    printf("Digite o salario desejado: ");
+    printf("Digite o seu salario atual: ");
     scanf("%f", &sal);
 
     imp = sal * 10 / 100;

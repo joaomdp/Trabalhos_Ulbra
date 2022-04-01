@@ -4,6 +4,7 @@
 int main()
 {
     int base, altura, area;
+    printf ( " ========== Programa para descobrir a area de um triangulo ==========\n\n " );
 
     printf("Digite a base do triangulo: ");
     scanf("%d", &base);
