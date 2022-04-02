@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1648685032 source:c:\users\joaom\desktop\algoritmos e programação\projetosc\exercicios 1-10- feito em aula\exercicio12\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1648906051 source:c:\users\joaom\desktop\trabalhos_ulbra\trabalhos_ulbra_2022_01\algoritmos e programação\projetosc\exercicios 11-20\exercicio12\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
