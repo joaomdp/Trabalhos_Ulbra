@@ -8,16 +8,16 @@ int main(void)
     printf( " ========== Programa para somar numeros inteiros ========== \n\n " ) ;
 
     printf("Digite um valor: ");
-    scanf("%d", &n1);
+    scanf("%d%*c", &n1);
 
     printf("Digite outro valor: ");
-    scanf("%d", &n2);
+    scanf("%d%*c", &n2);
 
     printf("Digite outro valor: ");
-    scanf("%d", &n3);
+    scanf("%d%*c", &n3);
 
     printf("Digite outro valor: ");
-    scanf("%d", &n4);
+    scanf("%d%*c", &n4);
 
     soma = n1 + n2 + n3 + n4;
 
