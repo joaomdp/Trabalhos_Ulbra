@@ -13,7 +13,6 @@ table, td, th {
     border-bottom: solid 1px #e2e2e2;
     border-collapse: collapse;
     padding: 7px;
- 
 }
 th {
     color: darkgray;
@@ -63,61 +62,27 @@ td {
     text-decoration: underline;
     background-color: #355388;
 } 
-/*CLASSIFICAÇÃO*/
+/*GOLEADORES*/
 h2 {
     padding: 10px 0px 5px 13px;
 }
-h3 {
-    padding: 10px 0px 5px 15px;
-    background-color: #ffffff;
+#goleadores{
+    width: 60%; 
+    text-align: left;
 }
-#divClassificacao{
-    width: 60%;
-}
-#tableClassificacao{
+.tableGoleadores{
     width: 100%;
     background-color: #fff;
 }
-.divClassificacao {
-    font-size: 20px;
-    margin: 10px 0px 10px 10px;
-}
-.thNomeClube {
-    width: 50%;
+.nomeJogador {
     text-align: left;
+    width: 20%;
+    height: 20%;
 }
-.tdNomeClube {
-    text-align: left;
-    padding-right: 200px ;
-}
-.imgClube{
+.imgJogador {
     width: 20px;
     height: 20px;
 }
-.emp {  
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/e.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.vit {
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/v.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.derr {
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/d.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.ultimas5 {
+.gols {
     text-align: center;
 }

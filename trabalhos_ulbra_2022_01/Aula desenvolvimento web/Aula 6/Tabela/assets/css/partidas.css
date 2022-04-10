@@ -13,7 +13,6 @@ table, td, th {
     border-bottom: solid 1px #e2e2e2;
     border-collapse: collapse;
     padding: 7px;
- 
 }
 th {
     color: darkgray;
@@ -63,61 +62,40 @@ td {
     text-decoration: underline;
     background-color: #355388;
 } 
-/*CLASSIFICAÇÃO*/
+/*PROXIMOS JOGOS*/
+span {
+    padding-left: 23px;
+}
 h2 {
-    padding: 10px 0px 5px 13px;
+    padding: 10px 0px 5px 7px;
 }
-h3 {
-    padding: 10px 0px 5px 15px;
-    background-color: #ffffff;
+h5 {
+    float: right;
+    padding: 2px 7px;
+    font-size: small;
 }
-#divClassificacao{
+#divJogos{
     width: 60%;
 }
-#tableClassificacao{
+#tabelaJogos{
     width: 100%;
+    text-align: center;
     background-color: #fff;
 }
-.divClassificacao {
-    font-size: 20px;
-    margin: 10px 0px 10px 10px;
+.tdTableJogos{
+    padding: 10px;
 }
-.thNomeClube {
-    width: 50%;
-    text-align: left;
+.tablejogo, #tablejogo {
+    width: 100%;
 }
-.tdNomeClube {
-    text-align: left;
-    padding-right: 200px ;
+.tdClube {
+    float: left;
 }
 .imgClube{
     width: 20px;
     height: 20px;
 }
-.emp {  
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/e.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.vit {
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/v.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.derr {
-    background-repeat:no-repeat ;    
-    background-image: url("../img/img/d.svg");
-    float: right;
-    margin-right: 5px; 
-    width: 16px;
-    height: 16px;
-}
-.ultimas5 {
-    text-align: center;
-}
+
+
+
+
