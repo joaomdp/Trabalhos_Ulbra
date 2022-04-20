@@ -43,11 +43,11 @@ td {
     color: #fff;
     font-size: 16px;
     float: left;
-    width: 100%;
+    width: 110%;
 }
 .divMenu {
     padding-top: 8%;
-    width: 100%;
+    width: 110%;
     clear: both;
     padding-left: 15%;
     padding-right: 20%;
@@ -70,12 +70,13 @@ h2 {
 h3 {
     padding: 10px 0px 5px 15px;
     background-color: #ffffff;
+    width: 108%;
 }
 #divClassificacao{
     width: 60%;
 }
 #tableClassificacao{
-    width: 100%;
+    width: 110%;
     background-color: #fff;
 }
 .divClassificacao {
@@ -98,7 +99,7 @@ h3 {
     background-repeat:no-repeat ;    
     background-image: url("../img/img/e.svg");
     float: right;
-    margin-right: 5px; 
+    margin-right: 4px; 
     width: 16px;
     height: 16px;
 }
@@ -106,7 +107,7 @@ h3 {
     background-repeat:no-repeat ;    
     background-image: url("../img/img/v.svg");
     float: right;
-    margin-right: 5px; 
+    margin-right: 4px; 
     width: 16px;
     height: 16px;
 }
@@ -114,10 +115,67 @@ h3 {
     background-repeat:no-repeat ;    
     background-image: url("../img/img/d.svg");
     float: right;
-    margin-right: 5px; 
+    margin-right: 4px; 
     width: 16px;
     height: 16px;
 }
 .ultimas5 {
+    text-align: center;
+}
+/*PROXIMOS JOGOS*/
+span {
+    padding-left: 23px;
+}
+h2 {
+    padding: 10px 0px 5px 7px;
+}
+h5 {
+    float: right;
+    padding: 2px 7px;
+    font-size: small;
+}
+#divJogos{
+    width: 60%;
+}
+#tabelaJogos{
+    width: 110%;
+    text-align: center;
+    background-color: #fff;
+}
+.tdTableJogos{
+    padding: 10px;
+}
+.tablejogo, #tablejogo {
+    width: 110%;
+}
+.tdClube {
+    float: left;
+}
+.imgClube{
+    width: 20px;
+    height: 20px;
+}
+/*GOLEADORES*/
+h2 {
+    padding: 10px 0px 5px 13px;
+}
+#goleadores{
+    width: 60%; 
+    text-align: left;
+}
+.tableGoleadores{
+    width: 110%;
+    background-color: #fff;
+}
+.nomeJogador {
+    text-align: left;
+    width: 20%;
+    height: 20%;
+}
+.imgJogador {
+    width: 20px;
+    height: 20px;
+}
+.gols {
     text-align: center;
 }

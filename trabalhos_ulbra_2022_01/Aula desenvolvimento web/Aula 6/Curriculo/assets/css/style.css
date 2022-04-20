@@ -1,0 +1,139 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    background-color: rgb(104, 241, 104);
+    border-radius: 10px;
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: snow;
+    font-family: sans-serif;
+}
+h2{
+    color:rgb(104, 241, 104);
+    text-align: left;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+h3{
+    text-align: left;
+    color: rgb(104, 241, 104);
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+h4{
+    margin-top: 0;
+    font-family: sans-serif;
+}
+h5 {
+    padding: 2px;
+}
+hr{
+    border-color: rgb(104, 241, 104); 
+    margin-top: 0px; 
+}
+p{
+    text-align: left;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-top: 0%;
+}
+.tudo{
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    border: solid 1px black;
+}
+.linha{
+    clear: both;
+}
+.textoDados{
+    color: rgb(104, 241, 104);
+    font-size: 14px;
+}
+.itens{
+    float: left;
+    font-size: 14px;
+    padding: 0px;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color:rgb(104, 241, 104); ;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+}
+.redeSocial {
+    float: right;    
+}
+#perfil{
+    float: left;
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 150px;
+    border: solid 1px black;
+}
+#dados{
+    width: 60%;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    margin: 26px 0px 0px 20px ;
+}
+#coluna1{
+    float: left;
+    width: 47%;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+#coluna2{
+    float: left;
+    background-color: rgb(104, 241, 104);
+    width: 0px;
+    height:300px;
+}
+#coluna3{
+    float: left;
+    width: 47%;
+    padding-left: 10px;
+}
+#redeSocial{
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
+    margin-top: 50px;
+}
+#formacao{
+    margin: 17px 5px;
+    text-align: left;
+    margin-bottom: 0%;
+}
+#objetivo{
+    margin: 17px 5px;
+    margin-bottom: 0%;   
+}
+#cursos{
+    text-align: left;
+    margin-left: 0,5%;
+    margin-top: 0%;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+#experiencia{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(64, 62, 62);
+    margin-bottom: 0%;
+}
+#pExp {
+    margin-top: 0%;
+    text-align: left;
+}
+
