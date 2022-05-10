@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652108583 source:c:\users\joaom\desktop\trabalhos_ulbra\trabalhos_ulbra_2022_01\algoritmos e programação\algoritmos_diarios\algoritmo_futebol\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
