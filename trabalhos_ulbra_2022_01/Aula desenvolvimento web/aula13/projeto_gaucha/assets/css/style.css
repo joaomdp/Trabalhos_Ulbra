@@ -1,3 +1,4 @@
+/*CONFIGURAÇÕES GERAIS*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,12 +8,23 @@ img{
 }
 /*CABEÇALHO*/
 header{
-    background-color: rgb(12, 12, 12);
+   background-color: black;
 }
 .header{
+    margin: 0%;
+    padding: 0%;
     font-family: Impact;
-    color: #d25c31;
+    color: white;
     font-size: 100px;
+}
+.botao-menu{
+    
+    text-align: right;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    color: #fff;
+    background-color: black;
 }
 /*NOTICIAS MAIORES*/
 .h1-maior{
@@ -56,6 +68,7 @@ footer{
     font-size: 100px;
 }
 .p-footer{
+    padding-left: 50px;
     font-size: 13px;
     font-style: italic;
 }
@@ -77,4 +90,4 @@ footer{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    }
+}

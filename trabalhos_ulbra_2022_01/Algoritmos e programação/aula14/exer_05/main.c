@@ -3,22 +3,18 @@
 
 int main()
 {
-    int n1,n2;
-
-    do{
-        printf("Digite um valor inteiro: \n");
-        scanf("%d%*c", &n1);
-
-        printf("Digite um valor inteiro: \n");
-        scanf("%d%*c", &n2);
-
-    if (n1>n2){
-        printf("Ordem crescente\n");
-    }else {
-        printf("Ordem decrescente\n");
+    int x,soma,f;
+    soma=0;
+    f=10;
+    for(x=1;x<f;x++){
+        if(x%2==0){
+            f=f-1;
+        }
+        soma=x+f;
+        x++;
     }
-    }while(n1==n2);
-    printf("Os valores sao iguais");
-
+    printf("Valor de x=%d\n", x);
+    printf("Valor de soma=%d\n", soma);
+    printf("Valor de f=%d\n", f);
     return 0;
 }
