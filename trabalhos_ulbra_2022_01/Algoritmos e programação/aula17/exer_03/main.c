@@ -4,19 +4,16 @@
 int main()
 {
     //FUP que leia 3 strings e escreva em ordem alfabética
-    char letra1[1];
-    char letra2[1];
-    char letra3[1];
-
-    printf("Digite uma letra\n");
-    scanf("%s%*c",&letra1);
-    printf("Digite uma letra\n");
-    scanf("%s%*c",&letra2);
-    printf("Digite uma letra\n");
-    scanf("%s%*c",&letra3);
-
-    strcmp(letra1,letra2)==1;
-
-    printf("%s %s %s",letra1,letra2,letra3);
+    char letra[2];
+    int i;
+    for(i=0;i<3;i++){
+        printf("Digite a %d letra:\n", i+1);
+        scanf("%s%*c", &letra[i]);
+    }
+    for(i=0;i<3;i++){
+        if(letra[i>letra[i]){
+            printf("%s\n%s\n%s", letra[i]);
+        }
+    }
     return 0;
 }

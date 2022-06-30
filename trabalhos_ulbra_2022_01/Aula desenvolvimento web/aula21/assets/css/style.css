@@ -1,0 +1,47 @@
+/* CONFIGURAÇÕES GERAIS     */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+img{
+    border: 1px solid black;
+}
+
+/* FOFURIZANDO O INDEX */
+strong{
+    color: red;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logoPrincipal{
+    font-size: 100px;
+    font-family: Impact,fantasy;
+}
+.logoSubtitulo{
+    font-size: 40px;
+    font-family: Impact,fantasy;
+}
+.icons{
+    font-size: 20px;
+}
+
+/* FOFURIZANDO O HOME */
+h2{
+    font-size: 23px;
+}
+
+/* FOFURIZANDO O SOBRE */
+.h1Sobre{
+    font-size: 20px;
+}
+
+/* FOFURIZANDO O PRODUTOS */
+.h1Produtos{
+    font-size: 20px;
+}
+
+/* FOFURIZANDO O CONTATO */
+.h1Contato{
+    font-size: 20px;
+}
