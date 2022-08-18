@@ -27,16 +27,16 @@
                     <h2>Menu</h2>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                        <a id="btnHome" class="nav-link" href="?pages=home">Home</a>
+                        <a id="btnHome" class="nav-link" href="?controller=site&action=home">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a id="btnAbout" class="nav-link" href="?pages=about">Sobre</a>
+                        <a id="btnAbout" class="nav-link" href="?controller=site&action=about">Sobre</a>
                         </li>
                         <li class="nav-item">
-                        <a id="btnProducts" class="nav-link" href="?pages=products">Produtos e serviços</a>
+                        <a id="btnProducts" class="nav-link" href="?controller=site&action=products">Produtos e serviços</a>
                         </li>
                         <li class="nav-item">
-                        <a id="btnContact" class="nav-link" href="#">Contatos</a>
+                        <a id="btnContact" class="nav-link" href="?controller=site&action=contact">Contatos</a>
                         </li>
                     </ul>
                 </nav>

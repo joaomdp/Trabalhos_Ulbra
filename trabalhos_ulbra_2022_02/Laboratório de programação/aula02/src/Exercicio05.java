@@ -2,16 +2,20 @@ import java.util.Scanner;
 
 public class Exercicio05 {
     public static void main(String[] args) {
-        float distancia, combustivel,consumo_medio;
-
+        double km1, km2,TaxaDeConsumo, kmtotal, litros;
         Scanner tc = new Scanner(System.in);
-        System.out.println("Digite a distancia total percorrida: ");
-        distancia = tc.nextFloat();
-        System.out.println("Digite o total de combustivel gasto: ");
-        combustivel = tc.nextFloat();
 
-        consumo_medio = distancia / combustivel;
+        System.out.println("Informe o KM inicial: ");
+        km1 = tc.nextFloat();
+        System.out.println("Informe o KM final: ");
+        km2 = tc.nextFloat();
+        System.out.println("Informe a quantidade de litros consumidos: ");
+        litros = tc.nextFloat();
 
-        System.out.println("O consumo medio do veiculo e de: "+consumo_medio);
+        kmtotal = km1 - km2;
+
+        TaxaDeConsumo = kmtotal/litros;
+        System.out.println("O total percorrido foi de " +kmtotal + " Km");
+        System.out.println("A taxa media de consumo e de " +TaxaDeConsumo +" Litros por Km percorridos");
     }
 }

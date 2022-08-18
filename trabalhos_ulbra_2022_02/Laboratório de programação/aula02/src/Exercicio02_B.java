@@ -1,11 +1,10 @@
 public class Exercicio02_B {
     public static void main(String[] args) {
-        int soma=0, i=1;
+        int soma=0;
 
-        do {
-            soma=soma+i;
-            i+=2;
-            System.out.println("a soma e: "+soma);
-        }while (soma<101);
+        for (int i=1;i<=100;i+=2){
+            soma = soma+i;
+        }
+        System.out.println(soma);
     }
 }
