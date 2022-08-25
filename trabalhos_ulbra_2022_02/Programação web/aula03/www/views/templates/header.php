@@ -39,14 +39,6 @@
                         <a id="btnContact" class="nav-link" href="?controller=site&action=contact">Contatos</a>
                         </li>
                     </ul>
-
-                    <h2>Clientes</h2>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a id="" class="nav-link" href="?controller=client&action=register">Cadastro</a>
-                        </li>
-                    </ul>
-
                 </nav>
         
                 <section class="col-md-9 p-4">
