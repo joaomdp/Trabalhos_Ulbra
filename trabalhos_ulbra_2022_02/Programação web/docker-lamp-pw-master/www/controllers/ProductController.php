@@ -1,6 +1,6 @@
 <?php
 
-class ClientController{
+class ProductController{
 
     public function index(){
 
@@ -44,6 +44,27 @@ class ClientController{
         }
         require_once('views/templates/header.php');
         require_once('views/client/listClients.php');
+        require_once('views/templates/footer.php');
+    }
+
+    public function listProducts(){
+        require_once('models/ProductModel.php');
+        $ProductModel = new ProductModel();
+        $result = $ProductModel -> listProducts();
+
+        $arrayProducts =  array();
+        while($line = $result -> fetch_assoc()){
+            array_push($arrayProducts, $line);
+        }
+        $arrayProduct = array(
+            'idProduct' => $_POST['idProduct'],
+            'name' => $_POST['name'],
+            'price' => $_POST['price'],
+            'description' => $_POST['description'],
+            'idCategory' => $_POST['idCategory'],
+        );
+        require_once('views/templates/header.php');
+        require_once('views/client/listProducts.php');
         require_once('views/templates/footer.php');
     }
 }

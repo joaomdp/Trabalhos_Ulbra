@@ -45,12 +45,6 @@
                         <li class="nav-item">
                             <a id="" class="nav-link" href="?controller=client&action=register">Cadastro</a>
                         </li>
-                        <li class="nav-item">
-                            <a id="" class="nav-link" href="?controller=client&action=listClients">lista de contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="" class="nav-link" href="?controller=client&action=listProducts">lista de Produtos</a>
-                        </li>
                     </ul>
 
                 </nav>

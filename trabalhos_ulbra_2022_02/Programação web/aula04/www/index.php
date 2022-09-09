@@ -27,8 +27,7 @@ if(!isset($_GET['controller'])){
           break;
         }
       }
-    break; 
-
+    break;   
     case 'client':
       require_once('controllers/ClientController.php');
       $client = new ClientController();
@@ -42,21 +41,9 @@ if(!isset($_GET['controller'])){
           case 'registerView':
             $client -> registerView();
           break;
-          case 'listClients':
-            $client -> listClients();
-          break;
         }
       }
     break; 
-    case 'product':
-      require_once('controllers/ProductController.php');
-      $product = new ProductController();
-      switch($_REQUEST['action']){
-        case 'listProducts':
-          $product -> listProducts();
-        break;
-      }
-    break;
   }  
 }
 
