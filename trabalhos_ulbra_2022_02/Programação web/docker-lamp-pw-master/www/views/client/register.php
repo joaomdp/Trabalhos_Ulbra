@@ -18,15 +18,15 @@
 
     <div class="form-check">
         <div class="radio">
-            <label><input type="radio" name="gender" value="female" checked>Feminino</label>
+            <label><input type="radio" name="gender" value="feminino" checked>Feminino</label>
         </div>
         <div class="radio">
-            <label><input type="radio" name="gender" value="male" >Masculino</label>
+            <label><input type="radio" name="gender" value="masculino" >Masculino</label>
         </div>
         <div class="radio">
-            <label><input type="radio" name="gender" value="other" disable>Outro</label>
-        </div>
-    </div>
+            <label><input type="radio" name="gender" value="outros" disable>Outro</label>
+        </div> 
+    </div>                        	  
 
     <div class="checkbox">
         <label>
@@ -35,4 +35,4 @@
     </div>
 
     <button type='submit' class="btn btn-primary">Enviar</button>
-</form>
+</form>     
