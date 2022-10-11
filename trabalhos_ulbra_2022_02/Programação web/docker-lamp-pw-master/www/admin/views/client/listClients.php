@@ -8,7 +8,8 @@
         <th>Email</th>
         <th>Endereço</th>
         <th>Telefone</th>
-        <th>Ações</th>
+        <th>Foto</th>
+        <th colspan="2">Ações</th>
     </tr>
 <?php
     foreach ($arrayClients as $client){  
@@ -30,8 +31,27 @@
             <?=$client['address']?>
         </td>
         <td>
-            <a href="?controller=client&action=detailsClient&id=<?=$client['idClient']?>">
+            <?
+                if(is_file("assets/img/client/{$client['idClient']}.jpg")){
+                    echo "<img class='img-fluid' src='assets/img/client/{$client['idClient']}.jpg'";
+                }else{
+                    echo 'Sem imagem';
+                }
+            ?>
+        </td>
+        <td>
+            <a href="?controller=client&action=detailsClient&id=<?=$client['idClient']?>" class="btn btn-info">
                 Detalhes
+            </a>
+        </td>
+        <td>
+            <a href="?controller=client&action=updateClient&id=<?=$client['idClient']?>" class="btn btn-warning">
+                Alterar
+            </a>
+        </td>
+        <td>
+            <a href="?controller=client&action=deleteClient&id=<?=$client['idClient']?>" class="btn btn-danger">
+                Deletar
             </a>
         </td>
     </tr>

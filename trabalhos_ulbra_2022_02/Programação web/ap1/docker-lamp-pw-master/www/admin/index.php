@@ -43,31 +43,23 @@ if (!isset($_GET['controller'])) {
           $client -> index();
       }else{
         switch($_REQUEST['action']){
+          case 'register':
+            $client -> register();
+          break;
+          case 'registerView':
+            $client -> registerView();
+          break;
           case 'listClients':
             $client -> listClients();
           break;
           case 'detailsClient':
-            $client -> detailsClient($_GET['id']);
-          break;
-          case 'insertClient':
-            $client -> insertClient();
-          break;
-          case 'insertClientAction':
-            $client -> insertClientAction();
-          break;
-          case 'updateClient':
-            $client -> updateClient($_GET['id']);
-          break;
-          case 'updateClientAction':
-            $client -> updateClientAction($_GET['id']);
-          break;
-          case 'deleteClient':
-            $client -> deleteClient($_GET['id']);
+            require_once('controllers/ClientController.php');
+            $ClientController = new ClientController();
+            $ClientController -> detailsClient($_GET['id']);
           break;
         }
       }
     break;
-
     case 'site':
       require_once('controllers/SiteController.php');
       $SiteController = new SiteController();
@@ -81,5 +73,6 @@ if (!isset($_GET['controller'])) {
         }
       }
     break; 
+
   }
 }

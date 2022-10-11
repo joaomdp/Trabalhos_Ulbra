@@ -36,9 +36,6 @@
                     <li class="nav-item">
 						<a id="" class="nav-link" href="?controller=client&action=listClients">Lista de Contatos</a>
 					</li>
-                    <li class="nav-item">
-						<a id="" class="nav-link" href="?controller=client&action=insertClient">Adicionar cliente</a>
-					</li>
                 </ul>
 
             </nav>
