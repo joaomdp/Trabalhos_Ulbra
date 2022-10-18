@@ -1,11 +1,10 @@
 public class Turma {
+    Aluno aluno1;
+    Aluno aluno2;
+    Aluno aluno3;
 
-    String aluno1;
-    String aluno2;
-    String aluno3;
-
-    public void definirValores(String aluno1, String aluno2, String aluno3){
-
+    double calcularMedia(){
+        double media = aluno1.calcularMedia() + aluno2.calcularMedia() + aluno3.calcularMedia();
+        return media / 3;
     }
-
 }
