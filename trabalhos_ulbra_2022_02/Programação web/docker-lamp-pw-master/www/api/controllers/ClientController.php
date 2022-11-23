@@ -1,5 +1,4 @@
 <?php
-
 class ClientController{
 
     var $ClientModel;
@@ -11,7 +10,6 @@ class ClientController{
 
     public function listClient(){
         $result = $this -> ClientModel -> listClient();
-
         $arrayClients =  array();
         while($line = $result -> fetch_assoc()){
             array_push($arrayClients, $line);
@@ -40,8 +38,8 @@ class ClientController{
 
     public function insertClient(){
         $client = json_decode(file_get_contents("php://input"));
-        $client = (array) $client;
-        $idClient = $this -> ClientModel -> insertClient($client);
+        $arrayClient = (array) $client;
+        $idClient = $this -> ClientModel -> insertClient($arrayClient);
         header('Content-Type: application/json');
         echo('
         {
