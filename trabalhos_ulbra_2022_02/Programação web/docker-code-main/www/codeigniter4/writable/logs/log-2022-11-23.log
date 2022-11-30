@@ -1,0 +1,19 @@
+CRITICAL - 2022-11-23 16:39:44 --> Invalid file: admin/emplates/header.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/emplates/header.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/emplates/header', [], true)
+ 3 APPPATH/Controllers/Admin/Client.php(15): view('admin/emplates/header')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 18:32:12 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1598.
+ 1 SYSTEMPATH/BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH/Controllers/Admin/Client.php(67): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->updateClientAction('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

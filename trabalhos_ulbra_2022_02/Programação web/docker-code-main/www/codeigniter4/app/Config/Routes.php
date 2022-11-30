@@ -46,8 +46,21 @@ $routes->get('/listClients', 'Client::listClients');
 //Rotas admin
 $routes->get('/admin', 'Admin\Admin::index');
 $routes->get('/admin/login', 'Admin\Admin::login');
+$routes->get('/admin/logout', 'Admin\Admin::logout');
+
 
 $routes->add('/admin/validateLogin', 'Admin\User::validateLogin');
+
+$routes->add('/admin/listClients', 'Admin\Client::listClients');
+$routes->add('/admin/insertClient', 'Admin\Client::insertClient');
+$routes->add('/admin/insertClientAction', 'Admin\Client::insertClientAction');
+$routes->add('admin/updateClient/(:num)','Admin\Client::updateClient/$1');
+$routes->add('admin/updateClientAction/(:num)','Admin\Client::updateClientAction/$1');
+$routes->add('admin/deleteClient/(:num)','Admin\Client::deleteClient/$1');
+
+
+
+
 
 /*
  * --------------------------------------------------------------------

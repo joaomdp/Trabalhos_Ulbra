@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/notas/notas.iml" filepath="$PROJECT_DIR$/notas/notas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notesApi-master/notas.iml" filepath="$PROJECT_DIR$/notesApi-master/notas.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49bf150c-14aa-49db-ae50-25ffffff4f9d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Fundamentos de banco de dados/aula20/aula_joins.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Fundamentos de banco de dados/aula20/bernardo-alves.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Fundamentos de banco de dados/aula20/joao_manoel_pereira.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Fundamentos de banco de dados/aula20/joao_manoel_pereira.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/main/java/com/example/notas/NotasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/main/java/com/example/notas/controller/NotaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/main/java/com/example/notas/model/nota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/main/java/com/example/notas/repository/NotaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/src/test/java/com/example/notas/NotasApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_redo/#ib_redo9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/binlog.000004" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/binlog.000004" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/pw_exemple/clients.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/pw_exemple/clients.MYD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/pw_exemple/clients.MYI" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/pw_exemple/clients.MYI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/database/mysql/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Config/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Config/Routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Controllers/Admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Controllers/Admin/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Models/ClientModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Models/ClientModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Views/admin/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Views/admin/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/app/Views/admin/templates/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986115.074547.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986115.957303.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986125.044302.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986311.748325.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986316.648722.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986324.108043.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986325.756700.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986328.559192.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986334.877777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986338.019196.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986376.012703.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986380.555069.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986385.415891.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986391.067485.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986394.364918.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986400.590121.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986409.288511.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986411.772776.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986436.466502.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação web/docker-code-main/www/codeigniter4/writable/debugbar/debugbar_1668986439.515499.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IF9DB3se29mZrF24sNbUVKgAEB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="NotasApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notas" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notas.NotasApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49bf150c-14aa-49db-ae50-25ffffff4f9d" name="Changes" comment="" />
+      <created>1669766344954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669766344954</updated>
+      <workItem from="1669766347549" duration="177000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
