@@ -3,7 +3,7 @@
 <table class="table table-striped">
 
     <tr>
-        <th>ID do cliente</th>
+        <th>Código do cliente</th>
         <th>Nome</th>
         <th>Email</th>
         <th>Telefone</th>
@@ -11,7 +11,7 @@
         <th colspan="2">Ações</th>
     </tr>
 <?php
-    foreach ($arrayClients as $client){  
+    foreach ($clients as $client){  
 ?>
     <tr>
         <td>

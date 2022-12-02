@@ -1,0 +1,275 @@
+ERROR - 2022-11-30 16:08:00 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/html/c...', 171)
+#1 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#7 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#8 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#11 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#7 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#6 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#7 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-30 16:08:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user` = :user:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 16:08:41 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/html/c...', 171)
+#1 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#7 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#8 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#11 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#7 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#6 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#7 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-30 16:08:41 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user` = :user:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 16:09:31 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/html/c...', 171)
+#1 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#7 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#8 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#11 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('db', 'root', '1q2w3e4r5t', 'pw_exemple', 3306, '', 0)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#7 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#10 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/codeigniter4/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/codeigniter4/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/codeigniter4/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/codeigniter4/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/codeigniter4/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/codeigniter4/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /var/www/html/codeigniter4/app/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+#6 /var/www/html/codeigniter4/app/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+#7 /var/www/html/codeigniter4/system/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+#8 /var/www/html/codeigniter4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#9 /var/www/html/codeigniter4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-30 16:09:31 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user` = :user:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UserModel.php(13): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Admin/User.php(16): App\Models\UserModel->getUser('adm')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:45:19 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Admin/Client.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:47:13 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Admin/Client.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:48:08 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Admin/Client.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:48:26 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Admin/Client.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:49:13 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Admin/Client.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:52:48 --> Call to a member function insert() on null
+in APPPATH/Controllers/Admin/Client.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->insertClientAction()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:55:19 --> Call to a member function insert() on null
+in APPPATH/Controllers/Admin/Client.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->insertClientAction()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:00:53 --> Undefined variable $client
+in APPPATH/Views/client/listClients.php on line 13.
+ 1 APPPATH/Views/client/listClients.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH/Views/client/listClients.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/Client.php(15): view('client/listClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:01:27 --> Undefined variable $client
+in APPPATH/Views/client/listClients.php on line 13.
+ 1 APPPATH/Views/client/listClients.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH/Views/client/listClients.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/Client.php(15): view('client/listClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:01:47 --> Undefined variable $clients
+in APPPATH/Views/client/listClients.php on line 13.
+ 1 APPPATH/Views/client/listClients.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clients', 'APPPATH/Views/client/listClients.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/Client.php(15): view('client/listClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:02:13 --> Undefined variable $arrayClient
+in APPPATH/Views/client/listClients.php on line 13.
+ 1 APPPATH/Views/client/listClients.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arrayClient', 'APPPATH/Views/client/listClients.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/Client.php(15): view('client/listClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

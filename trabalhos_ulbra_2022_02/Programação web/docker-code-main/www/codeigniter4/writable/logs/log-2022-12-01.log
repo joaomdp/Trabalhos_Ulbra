@@ -1,0 +1,15 @@
+CRITICAL - 2022-12-01 16:58:11 --> Invalid file: admin/client/detailsSearchClient.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/client/detailsSearchClient.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/detailsSearchClient', [], true)
+ 3 APPPATH/Controllers/Admin/Client.php(94): view('admin/client/detailsSearchClient', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->buscarClientAction()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 20:08:43 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH/Controllers/Admin/User.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\User->validateLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

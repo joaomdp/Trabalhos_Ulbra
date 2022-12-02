@@ -1,13 +1,13 @@
-<h1>Listagem de clientes</h1>
-
-<table class="table table-striped">
+<h2 class="">Listagem de clientes</h1>
+<hr>
+<table class="table table-dark">
 
     <tr>
-        <th>ID do cliente</th>
+        <th>Código do cliente</th>
         <th>Nome</th>
         <th>Email</th>
-        <th>Endereço</th>
         <th>Telefone</th>
+        <th>Endereço</th>
     </tr>
 <?php
     foreach ($arrayClients as $client){  
