@@ -1,12 +1,16 @@
 public class exercicio05 {
     public static void main(String[] args) {
-        int vetor[] = {3,4,1,5};
+        int array[]={3,4,1,5};
 
-        for(int i=0;i<=5;i++){
-            String valores = vetor.toString();
+        System.out.println("{");
+
+        for (int i=0;i<4;i++){
+            System.out.print(array[i]);
+            if (i!=array.length-1){
+                System.out.println(",");
+            }else {
+                System.out.println("}");
+            }
         }
-        System.out.println();
-
-
     }
 }
