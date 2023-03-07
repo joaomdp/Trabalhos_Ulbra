@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = aula01_hello_world
-build_property.ProjectDir = c:\Users\joaom\Desktop\Trabalhos_Ulbra\trabalhos_ulbra_2023_01\Programação orientada a objetos\aula01_hello_world\
+build_property.RootNamespace = Aula02_basic
+build_property.ProjectDir = C:\Users\joaom\Desktop\Trabalhos_Ulbra\trabalhos_ulbra_2023_01\Programação orientada a objetos\Aula02_basic\
