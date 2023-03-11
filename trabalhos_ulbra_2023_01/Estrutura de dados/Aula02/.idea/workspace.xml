@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="236b435a-e008-4b5a-b988-bd26c1d492dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Estatistica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula02/atividade01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/atividade01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atividade01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,6 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678234639133</updated>
       <workItem from="1678234640784" duration="1350000" />
+      <workItem from="1678486077960" duration="5787000" />
+      <workItem from="1678535517557" duration="1155000" />
     </task>
     <servers />
   </component>
