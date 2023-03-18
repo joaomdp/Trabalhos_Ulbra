@@ -8,8 +8,7 @@ namespace Aula02_atividades
     public class ContaBancaria
     {
         public decimal Saldo;
-        public int Numero;
-
+    
         public void Depositar(decimal soma){
             Saldo += soma;
         }

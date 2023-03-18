@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="236b435a-e008-4b5a-b988-bd26c1d492dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Estatistica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Aula02/atividade01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula02/atividade01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/ContaBancaria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/ContaBancaria.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/Pessoa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/Pessoa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/bin/Debug/net7.0/Aula02_atividades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/bin/Debug/net7.0/Aula02_atividades.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/bin/Debug/net7.0/Aula02_atividades.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/bin/Debug/net7.0/Aula02_atividades.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/ref/Aula02_atividades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/ref/Aula02_atividades.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/refint/Aula02_atividades.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/refint/Aula02_atividades.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_pratique/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_pratique/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +65,8 @@
       <workItem from="1678234640784" duration="1350000" />
       <workItem from="1678486077960" duration="5787000" />
       <workItem from="1678535517557" duration="1155000" />
+      <workItem from="1678831881590" duration="1469000" />
+      <workItem from="1678836079573" duration="24000" />
     </task>
     <servers />
   </component>

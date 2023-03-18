@@ -7,9 +7,18 @@ namespace Aula02_atividades
 {
     public class Pessoa
     {
-        public string Apresentar { get; set; }
-        public string Nome;
-        public int Idade; 
+        public string Nome { get; private set; }
+        public int Idade { get; private set; }
+
+        public Pessoa(string nome, int idade){
+            this.Nome = nome;
+            this.Idade = idade;
+        }
+
+        public String Apresentar() { 
+            return $"Nome: {this.Nome} \n Idade {this.Idade}";
+        }
+
         
     }
 }
