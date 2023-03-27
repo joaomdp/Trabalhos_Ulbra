@@ -16,9 +16,12 @@ namespace Aula03_listas
                 Console.WriteLine("2. Listar todas as pessoas");
                 Console.WriteLine("3. Atualizar dados de uma pessoa");
                 Console.WriteLine("4. Excluir uma pessoa");
+                System.Console.WriteLine("\n--- Menu cidades ---");
                 Console.WriteLine("5. Adicionar uma cidade");
                 Console.WriteLine("6. Listar todas as cidades");
-                Console.WriteLine("7. Sair");
+                Console.WriteLine("7. Atualizar dados de uma cidade");
+                Console.WriteLine("8. Deletar uma cidade");
+                Console.WriteLine("9. Sair");
 
 
                 Console.Write("\nEscolha uma opção: ");
@@ -36,7 +39,7 @@ namespace Aula03_listas
                         PersonUpdate();
                         break;
                     case 4:
-                        PersonRemove();
+                        PersonDelete();
                         break;
                     case 5:
                         CityRegister();
@@ -45,6 +48,12 @@ namespace Aula03_listas
                         CityList();
                         break;
                     case 7:
+                        CityUpdate();
+                        break;
+                    case 8:
+                        CityDelete();
+                        break;
+                    case 9:
                         Console.WriteLine("\nFim do programa!");
                         return;
                     default:
@@ -125,7 +134,7 @@ namespace Aula03_listas
             Console.WriteLine("\nPessoa atualizada com sucesso!");
         }
 
-        void PersonRemove() 
+        void PersonDelete() 
         {
             Console.Write("\nDigite o ID da pessoa a ser excluída: ");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -174,5 +183,44 @@ namespace Aula03_listas
                 Console.WriteLine($"[{city.Id}] {city.Name}");
             }
         }
+
+        void CityUpdate() 
+        {
+            Console.Write("\nDigite o ID da cidade a ser atualizada: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            City city = cities.Find(c => c.Id == id);
+
+            if (city == null) 
+            {
+                Console.WriteLine("\nCidade não encontrada.");
+                return;
+            }
+
+            Console.Write("Digite o novo nome da cidade: ");
+            string? name = Console.ReadLine();
+
+            city.Name = name;
+
+            Console.WriteLine("\nCidade atualizada com sucesso!");
+        }
+
+        void CityDelete() 
+        {
+            Console.Write("\nDigite o ID da cidade a ser excluída: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            
+            City city = cities.Find(c => c.Id == id);
+
+            if (city == null) 
+            {
+                Console.WriteLine("\nCidade não encontrada.");
+                return;
+            }
+
+            cities.Remove(city);
+
+            Console.WriteLine("\nCidade excluída com sucesso!");
+        } 
     }
 }
