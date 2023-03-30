@@ -7,8 +7,9 @@ namespace Aula06_herança
 {
     public class Vilao : Personagem
     {
-        public Vilao(string nome, double forca, double inteligencia, string poderes) : base(nome, forca, inteligencia, poderes){}
-
-        public void Lutar(){}
+        public void LutarHeroi(Heroi heroi)
+        {
+            base.Lutar(heroi);
+        }
     }
 }

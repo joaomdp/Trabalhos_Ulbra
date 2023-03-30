@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Aula06_herança
 {
-    public class Heroi : Personagem
+    public class SuperVilao : Vilao
     {
-        public void LutarVilao(Vilao vilao)
+        public void SuperPoder()
         {
-            base.Lutar(vilao);
+            Console.WriteLine($"{this.Nome} está usando seu super poder!");
         }
     }
 }

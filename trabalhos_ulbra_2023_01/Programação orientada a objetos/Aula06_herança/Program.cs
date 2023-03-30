@@ -22,20 +22,22 @@ class Program
     // Console.WriteLine(moto.Modelo);
     // moto.Acelerar();
 
-    Personagem heroi = new Heroi("Batman", 7.5, 10, "Laminas");
-    Console.WriteLine(heroi.Nome);
-    Console.WriteLine(heroi.Forca);
-    Console.WriteLine(heroi.Inteligencia);
-    Console.WriteLine(heroi.Poderes);
-    heroi.Lutar();
+   
+   Heroi homemAranha = new Heroi()
+   {
+      Nome = "Homem aranha",
+      Forca = 8,
+      Inteligencia = 6,
+      Poderes = new string[] { "Teia", "Agilidade", "Esacalar parede" }
+   };
+   Vilao duendeVerde = new Vilao()
+      {
+         Nome = "Duende Verde",
+         Forca = 7,
+         Inteligencia = 8,
+         Poderes = new string[] { "Armas", "Voo", "Explosivos" }
+   };
 
-    Console.WriteLine("\n--- Personagens ---");
-
-    Personagem vilao = new Vilao("Coringa", 6.5, 9, "Piadas");
-    Console.WriteLine(vilao.Nome);
-    Console.WriteLine(vilao.Forca);
-    Console.WriteLine(vilao.Inteligencia);
-    Console.WriteLine(vilao.Poderes);
-    vilao.Lutar();
+   homemAranha.LutarVilao(duendeVerde);
    }
 }
