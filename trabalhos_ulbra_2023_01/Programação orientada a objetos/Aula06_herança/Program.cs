@@ -30,6 +30,7 @@ class Program
       Inteligencia = 6,
       Poderes = new string[] { "Teia", "Agilidade", "Esacalar parede" }
    };
+   
    Vilao duendeVerde = new Vilao()
       {
          Nome = "Duende Verde",

@@ -7,7 +7,7 @@ namespace Aula06_herança
 {
     public class Carro : Veiculo
     {
-        public Carro(string modelo) : base(modelo) {}
+        public Carro(string modelo) : base(modelo) {} // Construtor que se refere ao modelo da classe veiculo
 
         public override void Acelerar()
         {

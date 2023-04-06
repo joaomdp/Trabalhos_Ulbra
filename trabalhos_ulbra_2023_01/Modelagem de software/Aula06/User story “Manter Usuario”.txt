@@ -1,0 +1,32 @@
+User story “Manter Usuario”
+
+SENDO: O adm 
+POSSO: cadastrar, alterar, deletar e dar permissoes 
+PARA QUE: controlar os usuarios do sistema
+
+
+User story “Manter produto”
+
+SENDO: funcionario
+POSSO: manter as operaçoes de incluir, bloquear, editar e excluir produtos 
+PARA QUE: o estoque se mantenha atualizado 
+
+
+User story “manter fornecedor”
+
+SENDO: o adm
+POSSO: manter as operaçoes de incluir, bloqeuar, editar e excluir fornecedores 
+PARA QUE: 
+
+User story “manter pagamentos”
+
+SENDO: o adm
+POSSO: 
+PARA QUE: 
+
+
+User story “manter relatorio estoque”
+
+SENDO: um funcionário
+POSSO: finalizar um pedido de cliente
+PARA QUE: possa ser cobrado o valor do cliente
