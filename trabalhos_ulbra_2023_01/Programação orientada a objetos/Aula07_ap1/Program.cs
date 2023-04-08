@@ -39,10 +39,9 @@
                         string modeloCarro = Console.ReadLine();
 
                         Console.WriteLine("\nInforme o numero de ocupantes do carro");
-
                         int numOcupantes =Convert.ToInt32(Console.ReadLine());
 
-                        EstacionarCarro(estacionamento, placaCarro, marcaCarro, modeloCarro, numOcupantes);
+                        EstacionamentoRepository.Estacionar(estacionamento, placaCarro, marcaCarro, modeloCarro, numOcupantes);
                     break;
 
                     case 2:
@@ -55,22 +54,22 @@
                         Console.WriteLine("\nInforme o modelo da moto");
                         string modeloMoto = Console.ReadLine();
 
-                        EstacionarMoto(estacionamento, placaMoto, marcaMoto, modeloMoto);
+                        EstacionamentoRepository.Estacionar(estacionamento, placaMoto, marcaMoto, modeloMoto);
                     break;
 
                     case 3:
-                        ListarVeiculosEstacionados(estacionamento);
+                        EstacionamentoRepository.ListarVeiculosEstacionados(estacionamento);
                     break;
 
                     case 4:
-                        int vagasDisponiveis = ContarVagasDisponiveis(estacionamento);
+                        int vagasDisponiveis = EstacionamentoRepository.ContarVagasDisponiveis(estacionamento);
                         Console.WriteLine($"Há {vagasDisponiveis} vagas disponiveis");
                     break;
 
                     case 5:
                         Console.WriteLine("Informe o numero da vaga a ser liberada: ");
                         int numeroVaga = Convert.ToInt32(Console.ReadLine());
-                        RemoverVeiculo(estacionamento, numeroVaga);
+                        EstacionamentoRepository.RemoverVeiculo(estacionamento, numeroVaga);
                     break;
 
                     default:
@@ -79,79 +78,5 @@
                 }
             }
        }
-
-        static void EstacionarCarro(Vaga[] estacionamento, string placa, string marca, string modelo, int numOcupantes)
-        {
-            for(int i=0;i<estacionamento.Length;i++)
-            {
-                if(estacionamento[i].estaVazia())
-                {
-                    estacionamento[i].veiculo = new Carro(placa, marca, modelo, numOcupantes);
-                    System.Console.WriteLine($"\nCarro estacionado na vaga {i+1}");
-                    return;
-                }
-            }
-            System.Console.WriteLine("Não há vagas disponiveis para carros.");
-        }
-
-        static void EstacionarMoto(Vaga[] estacionamento, string placa, string marca, string modelo)
-        {
-            for(int i=0;i<estacionamento.Length;i++)
-            {
-                if(estacionamento[i].estaVazia())
-                {
-                    estacionamento[i].veiculo = new Moto(placa, marca, modelo);
-                    System.Console.WriteLine($"\nMoto estacionado na vaga {i+1}");
-                    return;
-                }
-            }
-            System.Console.WriteLine("\nNão há vagas disponiveis para motos.");
-        }
-
-        static void ListarVeiculosEstacionados(Vaga[] estacionamento)
-        {
-            System.Console.WriteLine("\nVeiculos estacionado: ");
-
-            for(int i=0;i<estacionamento.Length;i++)
-            {
-                if(!estacionamento[i].estaVazia())
-                {
-                     Console.WriteLine($"Vaga {i+1}: {estacionamento[i].veiculo.GetType().Name} - Placa: {estacionamento[i].veiculo.Placa}");
-                }
-            }
-        }
-
-        static int ContarVagasDisponiveis(Vaga[] estacionamento)
-        {
-            int cont = 0;
-
-    
-            for (int i = 0; i < estacionamento.Length; i++)
-            {
-                if(estacionamento[i].estaVazia())
-                {
-                    cont++;
-                }
-            }
-            return cont;
-        }
-
-        static void RemoverVeiculo(Vaga[] estacionamento, int numeroVaga)
-        {
-            if (numeroVaga < 1 || numeroVaga > estacionamento.Length)
-            {
-                System.Console.WriteLine("Numero de vagas invalidos");
-                return;
-            }
-            if(estacionamento[numeroVaga-1].estaVazia())
-            {
-                System.Console.WriteLine($"A vaga {numeroVaga} já esta vazia");
-                return;
-            }
-            string placa = estacionamento[numeroVaga-1].veiculo.Placa;
-            int numOcupantes = estacionamento[numeroVaga-1].veiculo.Ocupantes();
-            estacionamento[numeroVaga-1].veiculo =null;
-            System.Console.WriteLine($"Veiculo com placa {placa} e {numOcupantes} ocupante(s) removido da vaga {numeroVaga}");
-        }
     }
 }
