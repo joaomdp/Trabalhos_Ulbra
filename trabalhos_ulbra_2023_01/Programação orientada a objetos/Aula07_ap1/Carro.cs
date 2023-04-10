@@ -7,16 +7,18 @@ namespace Aula07_ap1
 {
     public class Carro : Veiculo
     {
-        public int numOcupantes;
+        public int Ocupantes { get; set; }
 
-        public Carro(string placa, string marca, string modelo, int numOcupantes) : base(placa, marca, modelo)
+        public Carro(string placa, int ocupantes) : base(placa)
         {
-            this.numOcupantes = numOcupantes;
+            Placa = placa;
+            Ocupantes = ocupantes;
         }
 
-        public override int Ocupantes()
+        public override void Estacionar()
         {
-            return numOcupantes;
+            Console.WriteLine($"O carro com placa {Placa} e {Ocupantes} portas foi estacionado.");
         }
+ 
     }
 }

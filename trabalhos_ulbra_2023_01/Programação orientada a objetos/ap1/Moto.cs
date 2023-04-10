@@ -7,8 +7,11 @@ namespace Aula07_ap1
 {
     public class Moto : Veiculo
     {
-        public Moto(string placa) : base(placa)
+        public Moto(string placa, string marca, string modelo) : base(placa, marca, modelo){}
+
+        public override int Ocupantes()
         {
+            return 1;
         }
     }
 }

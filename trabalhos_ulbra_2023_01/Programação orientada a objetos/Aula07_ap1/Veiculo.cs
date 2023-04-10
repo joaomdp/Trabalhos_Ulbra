@@ -5,19 +5,23 @@ using System.Threading.Tasks;
 
 namespace Aula07_ap1
 {
-    public abstract class Veiculo
+    public class Veiculo
     {
-        public String Placa { get; set; }
-        public String Marca { get; set; }
-        public String Modelo { get; set; }
+        public string Placa { get; set; }
 
-        public Veiculo(string Placa, string Marca, string Modelo)
+        public Veiculo(string placa)
         {
-            this.Placa = Placa;
-            this.Marca = Marca;
-            this.Modelo = Modelo;
+            this.Placa = placa;
         }
 
-        public abstract int Ocupantes();
+        public virtual void Estacionar()     
+        {         
+            Console.WriteLine($"O veículo com placa {Placa} foi estacionado.");     
+        }
+
+        public void Estacionar(string local)
+        {
+            Console.WriteLine($"O veículo com placa {Placa} foi estacionado em {local}.");
+        }
     }
 }
