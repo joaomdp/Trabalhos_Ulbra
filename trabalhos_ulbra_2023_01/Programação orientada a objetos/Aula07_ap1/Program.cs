@@ -39,18 +39,23 @@ namespace Aula07_ap1
                         Console.WriteLine("\nTipo invalido!");
                     } 
                         break;
+
                     case "2":
                         BuscarEstacionamento();
                         break;
+
                     case "3":
                         ListarEstacionamentos();
                         break;
+
                     case "4":
                         RemoverEstacionamento();
                         break;
+
                     case "5":
                         Console.WriteLine("\nPrograma encerrado com sucesso!");
                         return;
+                   
                     default:
                         Console.WriteLine("\nOpção inválida, tente novamente!");
                         break;
@@ -58,7 +63,7 @@ namespace Aula07_ap1
             }
         }
 
-        static void AdicionarEstacionamento()
+        static void AdicionarEstacionamento() // add moto
         {
             Console.Write("\nDigite o número da vaga do estacionamento: ");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -81,7 +86,7 @@ namespace Aula07_ap1
             Console.WriteLine($"\nMoto adicionada na vaga {id} com sucesso!");
         }
 
-        static void AdicionarEstacionamento(int ocupantes)
+        static void AdicionarEstacionamento(int ocupantes) // add carro
         {
             Console.Write("\nDigite o número da vaga do estacionamento: ");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -101,7 +106,7 @@ namespace Aula07_ap1
             Estacionamento newEstacionamento = new Estacionamento(id, veiculo);
             repository.Add(newEstacionamento);
 
-            Console.WriteLine($"\nMoto adicionada na vaga {id} com sucesso!");
+            Console.WriteLine($"\nCarro adicionado na vaga {id} com sucesso!");
         }
         
         static void BuscarEstacionamento()
@@ -117,8 +122,16 @@ namespace Aula07_ap1
             }
             else
             {
-                Console.WriteLine($"ID: {estacionamento.Id}");
-                Console.WriteLine($"Placa: {estacionamento.Veiculo.Placa}");
+                estacionamento.Estacionar();
+                    
+                if (estacionamento.Veiculo is Carro carro)
+                {
+                        carro.Estacionar();
+                }
+                else if (estacionamento.Veiculo is Moto moto)
+                {
+                    moto.Estacionar();
+                }
             }
         }
 

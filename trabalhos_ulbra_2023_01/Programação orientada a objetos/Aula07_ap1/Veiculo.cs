@@ -18,10 +18,5 @@ namespace Aula07_ap1
         {         
             Console.WriteLine($"O veículo com placa {Placa} foi estacionado.");     
         }
-
-        public void Estacionar(string local)
-        {
-            Console.WriteLine($"O veículo com placa {Placa} foi estacionado em {local}.");
-        }
     }
 }

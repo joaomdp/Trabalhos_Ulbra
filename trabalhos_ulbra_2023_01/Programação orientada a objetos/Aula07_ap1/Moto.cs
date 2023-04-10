@@ -10,5 +10,10 @@ namespace Aula07_ap1
         public Moto(string placa) : base(placa)
         {
         }
+        
+        public override void Estacionar()
+        {
+            Console.WriteLine("Tipo: Moto");
+        }
     }
 }

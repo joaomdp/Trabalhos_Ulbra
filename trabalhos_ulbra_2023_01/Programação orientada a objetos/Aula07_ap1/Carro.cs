@@ -17,7 +17,8 @@ namespace Aula07_ap1
 
         public override void Estacionar()
         {
-            Console.WriteLine($"O carro com placa {Placa} e {Ocupantes} portas foi estacionado.");
+            Console.WriteLine("Tipo: Carro");
+            Console.WriteLine($"Ocupantes: {Ocupantes}");
         }
  
     }

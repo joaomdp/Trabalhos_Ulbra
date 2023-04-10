@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Aula07_ap1
 {
-    public class Estacionamento
+    public class Estacionamento 
     {
         public int Id { get; set; }
         public Veiculo Veiculo { get; set; }
@@ -14,6 +14,12 @@ namespace Aula07_ap1
         {
             this.Id = id;
             this.Veiculo = veiculo;
+        }
+
+        public void Estacionar()
+        {
+            Console.WriteLine($"\nID: {Id}");
+            Console.WriteLine($"Placa: {Veiculo.Placa}");
         }
     }
 
