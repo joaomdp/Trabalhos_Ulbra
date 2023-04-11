@@ -2,70 +2,55 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Matriz {
-    private static int[][] matrix;
-    private static int matrixSize;
-    private static String[] patterns;
-    private static Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
-        System.out.print("Digite o tamanho da matriz (exemplo: 100): ");
-        matrixSize = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite a quantidade de padrões que deseja encontrar (exemplo: 2): ");
-        int numPatterns = scanner.nextInt();
+        System.out.print("Digite o tamanho da matriz: ");
+        int tamanhoMatriz = scanner.nextInt();
 
-        patterns = new String[numPatterns];
-        for (int i = 0; i < numPatterns; i++) {
-            System.out.print("Digite o padrão " + (i+1) + " que deseja encontrar (exemplo: 01): ");
-            patterns[i] = scanner.next();
-        }
-
-        generateMatrix();
-        printMatrix();
-
-        System.out.println("Procurando padrões...");
-        for (String pattern : patterns) {
-            findPattern(pattern);
-        }
-
-        scanner.close();
-    }
-
-    private static void generateMatrix() {
-        matrix = new int[matrixSize][matrixSize];
+        int[][] matriz = new int[tamanhoMatriz][tamanhoMatriz];
         Random random = new Random();
-        for (int i = 0; i < matrixSize; i++) {
-            for (int j = 0; j < matrixSize; j++) {
-                matrix[i][j] = random.nextInt(2);
+        for (int i = 0; i < tamanhoMatriz; i++) {
+            for (int j = 0; j < tamanhoMatriz; j++) {
+                matriz[i][j] = random.nextInt(2);
             }
         }
-    }
 
-    private static void printMatrix() {
-        for (int i = 0; i < matrixSize; i++) {
-            for (int j = 0; j < matrixSize; j++) {
-                System.out.print(matrix[i][j] + " ");
+        for (int i = 0; i < tamanhoMatriz; i++) {
+            for (int j = 0; j < tamanhoMatriz; j++) {
+                System.out.print(matriz[i][j] + " ");
             }
             System.out.println();
         }
-    }
 
-    private static void findPattern(String pattern) {
-        int count = 0;
-        long startTime = System.currentTimeMillis();
-        for (int i = 0; i < matrixSize; i++) {
-            for (int j = 0; j < matrixSize - pattern.length() + 1; j++) {
-                String sub = "";
-                for (int k = 0; k < pattern.length(); k++) {
-                    sub += Integer.toString(matrix[i][j + k]);
-                }
-                if (sub.equals(pattern)) {
-                    count++;
+        int contagem00 = 0;
+        int contagem01 = 0;
+        int contagem10 = 0;
+        int contagem11 = 0;
+
+        long iniciarTimer = System.currentTimeMillis();
+
+        for (int i = 0; i < tamanhoMatriz - 1; i++) {
+            for (int j = 0; j < tamanhoMatriz - 1; j++) {
+                if (matriz[i][j] == 0 && matriz[i][j + 1] == 0 && matriz[i + 1][j] == 0 && matriz[i + 1][j + 1] == 0) {
+                    contagem00++;
+                } else if (matriz[i][j] == 0 && matriz[i][j + 1] == 0 && matriz[i + 1][j] == 1 && matriz[i + 1][j + 1] == 0) {
+                    contagem01++;
+                } else if (matriz[i][j] == 1 && matriz[i][j + 1] == 0 && matriz[i + 1][j] == 0 && matriz[i + 1][j + 1] == 1) {
+                    contagem10++;
+                } else if (matriz[i][j] == 1 && matriz[i][j + 1] == 1 && matriz[i + 1][j] == 1 && matriz[i + 1][j + 1] == 1) {
+                    contagem11++;
                 }
             }
         }
-        long endTime = System.currentTimeMillis();
-        long duration = endTime - startTime;
-        System.out.println("Padrão " + pattern + ": " + count + " vezes, tempo: " + duration + "ms");
+
+        long fimTimer = System.currentTimeMillis();
+        long tempoDeExecucao = fimTimer - iniciarTimer;
+
+        System.out.println("Padrão (00) encontrado " + contagem00 + " vezes.");
+        System.out.println("Padrão (01) encontrado " + contagem01 + " vezes.");
+        System.out.println("Padrão (10) encontrado " + contagem10 + " vezes.");
+        System.out.println("Padrão (11) encontrado " + contagem11 + " vezes.");
+        System.out.println("Tempo necessário para encontrar todos os padrões: "+ tempoDeExecucao + " ms");
     }
 }

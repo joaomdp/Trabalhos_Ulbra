@@ -8,18 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Aula07_ap1/Matriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula07_ap1/Matriz.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Carro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Carro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/EstacionamentoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/EstacionamentoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Moto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Moto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Vaga.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Veiculo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/Veiculo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/bin/Debug/net7.0/Aula07_ap1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/bin/Debug/net7.0/Aula07_ap1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/bin/Debug/net7.0/Aula07_ap1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/bin/Debug/net7.0/Aula07_ap1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/Aula07_ap1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/Aula07_ap1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/Aula07_ap1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/Aula07_ap1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/ref/Aula07_ap1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/ref/Aula07_ap1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/refint/Aula07_ap1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula07_ap1/obj/Debug/net7.0/refint/Aula07_ap1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imersaoJava/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +61,8 @@
       <workItem from="1680646981392" duration="5451000" />
       <workItem from="1680972619311" duration="2186000" />
       <workItem from="1681065394878" duration="156000" />
+      <workItem from="1681215451070" duration="14530000" />
+      <workItem from="1681250499171" duration="344000" />
     </task>
     <servers />
   </component>
