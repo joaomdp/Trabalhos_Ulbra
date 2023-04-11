@@ -5,7 +5,6 @@ namespace Aula07_ap1
     public class EstacionamentoRepository
     {
         private List<Estacionamento> estacionamentos = new List<Estacionamento>();
-        private List<Veiculo> veiculos = new List<Veiculo>();
 
         public void Add(Estacionamento estacionamento)
         {
@@ -22,18 +21,12 @@ namespace Aula07_ap1
             return estacionamentos.FirstOrDefault(e => e.Id == id);
         }
 
-        public Veiculo BuscarPorPlaca(string placa)
+        public Estacionamento BuscarPorPlaca(string placa)
         {
-            foreach (var veiculo in veiculos)
-            {
-                if (veiculo.Placa == placa)
-                {
-                    return veiculo;
-                }
-            }
-
-            return null;
+            var estacionamentoEncontrado = estacionamentos.FirstOrDefault(e => e.Veiculo.Placa == placa);
+            return estacionamentoEncontrado;
         }
+
 
         public List<Estacionamento> GetAll()
         {

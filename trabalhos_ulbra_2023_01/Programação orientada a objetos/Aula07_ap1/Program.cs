@@ -53,9 +53,9 @@ namespace Aula07_ap1
                         RemoverEstacionamento();
                         break;
 
-                    // case "5":
-                    //     BuscarPorPlaca();
-                    //     break;
+                    case "5":
+                        BuscarPorPlaca();
+                        break;
                     case "6":
                         Console.WriteLine("\nPrograma encerrado com sucesso!");
                         return;
@@ -69,7 +69,7 @@ namespace Aula07_ap1
 
         static void AdicionarEstacionamento() // add moto
         {
-            Console.Write("\nDigite o número da vaga do estacionamento: ");
+            Console.Write("\nDigite o número da vaga do estacionamento: "); 
             int id = Convert.ToInt32(Console.ReadLine());
 
             Estacionamento estacionamento = repository.GetById(id);
@@ -141,32 +141,33 @@ namespace Aula07_ap1
             }
         }
 
-        // static void BuscarPorPlaca()
-        // {
-        //     Console.Write("\nDigite o número da placa do veiculo: ");
-        //     string placa = Convert.ToString(Console.ReadLine());
+        static void BuscarPorPlaca()
+        {
+            Console.Write("\nDigite o número da placa do veiculo: ");
+            string placa = Convert.ToString(Console.ReadLine());
 
-        //     Veiculo veiculos = repository.BuscarPorPlaca(placa);
+            Estacionamento estacionamento = repository.BuscarPorPlaca(placa);
 
-        //     if (veiculos == null)
-        //     {
-        //         Console.WriteLine("\nVeiculo não encontrado.");
-        //     }
-        //     else
-        //     {
-        //         Console.WriteLine($"Placa: {veiculos.Placa}");
+            if (estacionamento == null)
+            {
+                Console.WriteLine("\nVeiculo não encontrado.");
+            }
+            else
+            {
+                Console.WriteLine($"\nID: {estacionamento.Id}");
+                Console.WriteLine($"Placa: {estacionamento.Veiculo.Placa}");
                     
-        //         if (Veiculo is Carro carro)
-        //         {
-        //             Console.WriteLine("Tipo: Carro");
-        //             Console.WriteLine($"Ocupantes: {carro.Ocupantes}");
-        //         }
-        //         else if (veiculos.Veiculo is Moto moto)
-        //         {
-        //             Console.WriteLine("Tipo: Moto");
-        //         }
-        //     }
-        // }
+                if (estacionamento.Veiculo is Carro carro)
+                {
+                    Console.WriteLine("Tipo: Carro");
+                    Console.WriteLine($"Ocupantes: {carro.Ocupantes}");
+                }
+                else if (estacionamento.Veiculo is Moto moto)
+                {
+                    Console.WriteLine("Tipo: Moto");
+                }
+            }
+        }
         
         static void ListarEstacionamentos()
         {
