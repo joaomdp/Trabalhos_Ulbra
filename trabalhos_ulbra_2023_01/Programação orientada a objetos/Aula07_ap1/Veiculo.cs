@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Aula07_ap1
 {
-    public class Veiculo
+    public abstract class Veiculo
     {
         public string Placa { get; set; }
 
@@ -14,7 +14,7 @@ namespace Aula07_ap1
             this.Placa = placa;
         }
 
-        public virtual void Estacionar()     
+        public virtual void InfoVeiculo()     
         {         
             Console.WriteLine($"O veículo com placa {Placa} foi estacionado.");     
         }

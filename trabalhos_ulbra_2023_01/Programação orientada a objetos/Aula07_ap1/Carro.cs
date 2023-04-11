@@ -15,10 +15,9 @@ namespace Aula07_ap1
             Ocupantes = ocupantes;
         }
 
-        public override void Estacionar()
+        public override void InfoVeiculo()
         {
-            Console.WriteLine("Tipo: Carro");
-            Console.WriteLine($"Ocupantes: {Ocupantes}");
+            InfoVeiculo();
         }
  
     }

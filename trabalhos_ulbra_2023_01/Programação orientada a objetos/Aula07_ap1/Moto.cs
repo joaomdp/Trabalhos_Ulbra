@@ -11,9 +11,9 @@ namespace Aula07_ap1
         {
         }
         
-        public override void Estacionar()
+        public override void InfoVeiculo()
         {
-            Console.WriteLine("Tipo: Moto");
+            InfoVeiculo();
         }
     }
 }

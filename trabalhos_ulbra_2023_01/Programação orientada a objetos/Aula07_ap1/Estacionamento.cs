@@ -16,10 +16,9 @@ namespace Aula07_ap1
             this.Veiculo = veiculo;
         }
 
-        public void Estacionar()
+        public void InfoVeiculo()
         {
-            Console.WriteLine($"\nID: {Id}");
-            Console.WriteLine($"Placa: {Veiculo.Placa}");
+            InfoVeiculo();
         }
     }
 
