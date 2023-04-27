@@ -17,19 +17,14 @@ public class Main {
 
         for(int i = 0; i < matriz.length; i++){
             for(int j = 0; j < matriz.length; j++){
-                System.out.print(matriz[i][j] + " ");
+                System.out.print(matriz[i][j]);
             }
             System.out.println();
         }
 
-
-
-
-        int[][] padrao = {{0,0},
-                {1,1},
-                {0,1}};
-
-
+        int[][] padrao =    {{0,0,0},
+                            {1,1,1},
+                            {0,1,0}};
 
         int contador = 0;
         long startTime = System.nanoTime();
@@ -45,6 +40,7 @@ public class Main {
                     }
                     if (!encontrado) {
                         break;
+
                     }
                 }
                 if (encontrado) {
@@ -53,6 +49,7 @@ public class Main {
                 }
             }
         }
+
         long endTime = System.nanoTime();
         long tempoDecorrido = endTime - startTime;
         double tempoDecorridoSegundos = (double) tempoDecorrido / 1000000000.0;

@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="af4e771c-0da2-49e0-b2b8-eda2829516e5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula07_ap1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Aula07_ap1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Aula07_ap1/Matriz.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matriz.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Aula07_ap1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +78,8 @@
       <workItem from="1681215451070" duration="14530000" />
       <workItem from="1681250499171" duration="344000" />
       <workItem from="1681250916231" duration="848000" />
+      <workItem from="1681252916341" duration="3721000" />
+      <workItem from="1681858392784" duration="57000" />
     </task>
     <servers />
   </component>
