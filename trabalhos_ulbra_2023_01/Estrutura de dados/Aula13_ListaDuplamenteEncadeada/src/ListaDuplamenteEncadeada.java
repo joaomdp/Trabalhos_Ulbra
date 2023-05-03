@@ -1,10 +1,12 @@
 public class ListaDuplamenteEncadeada {
     private NoLista primeiro;
     private NoLista ultimo;
+    private int cont;
 
     public ListaDuplamenteEncadeada(){
         primeiro = null;
         ultimo = null;
+        cont = 0;
     }
 
     public void inserirInicio(int valor){
@@ -14,10 +16,11 @@ public class ListaDuplamenteEncadeada {
             primeiro = novo;
             ultimo = novo;
         }else {
-            novo.proximo = primeiro;
-            primeiro.anterior = novo;
+            novo.setProximo(primeiro);
+            primeiro.setAnterior(novo);
             primeiro = novo;
         }
+        cont++;
     }
 
     public void inserirFim(int valor){
@@ -27,10 +30,11 @@ public class ListaDuplamenteEncadeada {
             primeiro = novo;
             ultimo = novo;
         }else {
-            novo.anterior = ultimo;
-            ultimo.proximo = novo;
+            novo.setAnterior(ultimo);
+            ultimo.setProximo(novo);
             ultimo = novo;
         }
+        cont++;
     }
 
     public void removerInicio(){
@@ -39,9 +43,10 @@ public class ListaDuplamenteEncadeada {
                 primeiro = null;
                 ultimo = null;
             }else {
-                primeiro = primeiro.proximo;
-                primeiro.anterior = null;
+                primeiro = primeiro.getProximo();
+                primeiro.setAnterior(null);
             }
+            cont--;
         }
     }
 
@@ -51,34 +56,33 @@ public class ListaDuplamenteEncadeada {
                 primeiro = null;
                 ultimo = null;
             }else {
-                ultimo = ultimo.anterior;
-                ultimo.proximo = null;
+                ultimo = ultimo.getAnterior();
+                ultimo.setProximo(null);
             }
+            cont--;
         }
     }
 
     public int obter(int posicao){
+        if (posicao < 0 || posicao >= cont){
+            throw new IndexOutOfBoundsException();
+        }
+
         NoLista atual = primeiro;
 
-        for(int i=0; i < posicao; i++){
-            if (atual == null){
-                return -1;
-            }
-            atual = atual.proximo;
+        for (int i=0; i < posicao; i++){
+            atual = atual.getProximo();
         }
-        if (atual != null){
-            return atual.valor;
-        }else{
-            return -1;
-        }
+
+        return atual.getValor();
     }
 
     public void imprimir(){
         NoLista atual = primeiro;
 
         while (atual != null){
-            System.out.print(atual.valor + " ");
-            atual = atual.proximo;
+            System.out.print(atual.getValor() + " ");
+            atual = atual.getProximo();
         }
         System.out.println();
     }
@@ -87,8 +91,8 @@ public class ListaDuplamenteEncadeada {
         NoLista atual = ultimo;
 
         while (atual != null){
-            System.out.print(atual.valor + " ");
-            atual = atual.anterior;
+            System.out.print(atual.getValor() + " ");
+            atual = atual.getAnterior();
         }
 
         System.out.println();

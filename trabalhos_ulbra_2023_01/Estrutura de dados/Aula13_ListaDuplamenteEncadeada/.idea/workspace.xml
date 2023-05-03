@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1605d39d-10a3-47ad-91e6-3df6eeb88017" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aula13_ListaDuplamenteEncadeada.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NoLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NoLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NoLista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
       <updated>1683071225622</updated>
       <workItem from="1683071226902" duration="3296000" />
       <workItem from="1683116437805" duration="2115000" />
+      <workItem from="1683122338675" duration="1370000" />
     </task>
     <servers />
   </component>
