@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1605d39d-10a3-47ad-91e6-3df6eeb88017" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/Praticas_aula.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/src/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Praticas_aula/src/listaDupla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NoLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NoLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelagem de software/Aula10/modelagem apq.asta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelagem de software/Aula10/modelagem apq.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula10_impressora/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula10_impressora/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +71,8 @@
       <workItem from="1683071226902" duration="3296000" />
       <workItem from="1683116437805" duration="2115000" />
       <workItem from="1683122338675" duration="1370000" />
+      <workItem from="1683636588609" duration="1101000" />
+      <workItem from="1683673111558" duration="29000" />
     </task>
     <servers />
   </component>
