@@ -11,5 +11,6 @@ namespace Aula12_TestandoORM.Domain.Entities
         public string Nome { get; set; }
         public DateTime Idade { get; set; }
         public string PhoneNumber { get; set; }
+        public City city { get; set; }
     }
 }

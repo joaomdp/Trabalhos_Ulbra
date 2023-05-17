@@ -22,6 +22,7 @@ namespace Aula12_TestandoORM.Data.Context
 
         public DbSet<Person> Persons { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<City> Cities { get; set; }
 
     }
 }
