@@ -16,29 +16,34 @@ namespace Aula12_TestandoORM.Migrations
                 type: "INTEGER",
                 nullable: true);
 
-            migrationBuilder.CreateTable(
-                name: "City",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_City", x => x.Id);
-                });
+            migrationBuilder.AddColumn<int>(
+                name: "CityId",
+                table: "cities",
+                type: "INTEGER",
+                nullable: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Persons_cityId",
                 table: "Persons",
                 column: "cityId");
 
+            migrationBuilder.CreateIndex(
+                name: "IX_cities_CityId",
+                table: "cities",
+                column: "CityId");
+
             migrationBuilder.AddForeignKey(
-                name: "FK_Persons_City_cityId",
+                name: "FK_cities_cities_CityId",
+                table: "cities",
+                column: "CityId",
+                principalTable: "cities",
+                principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Persons_cities_cityId",
                 table: "Persons",
                 column: "cityId",
-                principalTable: "City",
+                principalTable: "cities",
                 principalColumn: "Id");
         }
 
@@ -46,19 +51,28 @@ namespace Aula12_TestandoORM.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Persons_City_cityId",
-                table: "Persons");
+                name: "FK_cities_cities_CityId",
+                table: "cities");
 
-            migrationBuilder.DropTable(
-                name: "City");
+            migrationBuilder.DropForeignKey(
+                name: "FK_Persons_cities_cityId",
+                table: "Persons");
 
             migrationBuilder.DropIndex(
                 name: "IX_Persons_cityId",
                 table: "Persons");
 
+            migrationBuilder.DropIndex(
+                name: "IX_cities_CityId",
+                table: "cities");
+
             migrationBuilder.DropColumn(
                 name: "cityId",
                 table: "Persons");
+
+            migrationBuilder.DropColumn(
+                name: "CityId",
+                table: "cities");
         }
     }
 }

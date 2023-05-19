@@ -7,7 +7,7 @@ namespace Aula12_TestandoORM.Domain.Intrefaces
 {
     public interface IBaseRepository<Entity> where Entity : class
     {
-        Entity GetBayId(int entityId);
+        Entity GetById(int entityId);
         IList<Entity> GetAll();
         void Save(Entity entity);
         void Delete(int entityId);

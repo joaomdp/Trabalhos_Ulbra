@@ -20,7 +20,7 @@ namespace Aula12_TestandoORM.Data.Repositories
 
         public void Delete(int entityId)
         {
-            var p = GetBayId(entityId);
+            var p = GetById(entityId);
             context.Persons.Remove(p);
             context.SaveChanges();
         }
@@ -30,7 +30,7 @@ namespace Aula12_TestandoORM.Data.Repositories
             return context.Persons.ToList();
         }
 
-        public Person GetBayId(int entityId)
+        public Person GetById(int entityId)
         {
             return context.Persons.SingleOrDefault(x=>x.Id == entityId);
         }

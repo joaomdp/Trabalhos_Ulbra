@@ -21,8 +21,6 @@ namespace Aula12_TestandoORM.Data.Context
             => options.UseSqlite($"Data Source={DbPath}");
 
         public DbSet<Person> Persons { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<City> Cities { get; set; }
-
+        public DbSet<City> cities {get; set;}
     }
 }

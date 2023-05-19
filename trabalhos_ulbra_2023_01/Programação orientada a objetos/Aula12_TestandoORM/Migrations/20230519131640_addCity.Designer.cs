@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aula12_TestandoORM.Migrations
 {
     [DbContext(typeof(MeuContexto))]
-    [Migration("20230516002747_AddCityHasManyPeopleAndOnePeopleHasOneCity")]
-    partial class AddCityHasManyPeopleAndOnePeopleHasOneCity
+    [Migration("20230519131640_addCity")]
+    partial class addCity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace Aula12_TestandoORM.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("City");
+                    b.ToTable("cities");
                 });
 
             modelBuilder.Entity("Aula12_TestandoORM.Domain.Entities.Person", b =>
@@ -49,42 +49,9 @@ namespace Aula12_TestandoORM.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("cityId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("cityId");
 
                     b.ToTable("Persons");
-                });
-
-            modelBuilder.Entity("Aula12_TestandoORM.Domain.Entities.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Aula12_TestandoORM.Domain.Entities.Person", b =>
-                {
-                    b.HasOne("Aula12_TestandoORM.Domain.Entities.City", "city")
-                        .WithMany("People")
-                        .HasForeignKey("cityId");
-
-                    b.Navigation("city");
-                });
-
-            modelBuilder.Entity("Aula12_TestandoORM.Domain.Entities.City", b =>
-                {
-                    b.Navigation("People");
                 });
 #pragma warning restore 612, 618
         }
