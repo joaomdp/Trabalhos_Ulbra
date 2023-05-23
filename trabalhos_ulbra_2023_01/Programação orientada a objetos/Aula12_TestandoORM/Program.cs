@@ -7,18 +7,18 @@ using Aula12_TestandoORM.Domain.interfaces;
 
 var db = new MeuContexto();
 
-// Console.WriteLine("----- Adicionar uma nova pessoa -----");
-// var person = new Person() 
-// {
-//     Id = 3, 
-//     Nome = "Lorenzo", 
-//     PhoneNumber = "46578913",
-//     City = new City()
-//     {
-//         Id = 1,
-//         Name = "Arroio do Sal"
-//     }
-// }; 
+Console.WriteLine("----- Adicionar uma nova pessoa -----");
+var person = new Person() 
+{
+    Id = 4, 
+    Nome = "Lorenzo novo", 
+    PhoneNumber = "46578913",
+    City = new City()
+    {
+        Id = 1,
+        Name = "Arroio do Sal"
+    }
+}; 
 
 // Console.WriteLine("----- Adicionar uma nova pessoa em uma cidade ja existente -----");
 // ICityRepository _cityRepository = new CityRepository(db);
