@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be72d1e7-1acc-44e7-a4b4-5d763cac8e8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aula14_OrdenacaoDeDados.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/Praticas_aula.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/src/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Praticas_aula/src/listaDupla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula13_ListaDuplamenteEncadeada/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula13_ListaDuplamenteEncadeada/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modelagem de software/Aula10/modelagem apq.asta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelagem de software/Aula10/modelagem apq.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula02_atividades/obj/Debug/net7.0/Aula02_atividades.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula10_impressora/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/Aula10_impressora/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programação orientada a objetos/aula01_hello_world/obj/Debug/net7.0/aula01_hello_world.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/Aula16_ExerciciosRecursividade.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula16_ExerciciosRecursividade/src/Exercicio01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683673139687</updated>
       <workItem from="1683673141143" duration="2650000" />
+      <workItem from="1684882357828" duration="125000" />
     </task>
     <servers />
   </component>
