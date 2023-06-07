@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Aula16_TesteWebFirst.props" />
+</Project>
