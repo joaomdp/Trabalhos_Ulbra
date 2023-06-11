@@ -7,45 +7,38 @@ using Aula12_TestandoORM.Domain.Entities;
 using Aula12_TestandoORM.Domain.interfaces;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace Aula18_AS.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CarroController : ControllerBase
+    public class EstacionamentoController : ControllerBase
     {
-        private readonly ICarroRepository repository;
+        private readonly IEstacionamentoRepository repository;
 
 
-
-
-        public CarroController()
+        public EstacionamentoController()
         {
-            this.repository = new CarroRepository();
+            this.repository = new EstacionamentoRepository();
         }
 
 
-
-
         [HttpGet]
-        public IEnumerable<Carro> Get()
+        public IEnumerable<Estacionamento> Get()
         {
             return repository.GetAll();
         }
 
 
-
-
         [HttpGet("{id}")]
-        public Carro Get(int id)
+        public Estacionamento Get(int id)
         {
             return repository.GetById(id);
         }
 
 
-
-
         [HttpPost]
-        public IActionResult Post([FromBody] Carro item)
+        public IActionResult Post([FromBody] Estacionamento item)
         {
             repository.Save(item);
             return Ok(new
@@ -57,8 +50,6 @@ namespace Aula18_AS.Controllers
         }
 
 
-
-
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -66,15 +57,13 @@ namespace Aula18_AS.Controllers
             return Ok(new
             {
                 StatusCode = 200,
-                message = "Carro deletado com sucesso"
+                message = "Estacionamento deletado com sucesso"
             });
         }
 
 
-
-
         [HttpPut]
-        public IActionResult Put([FromBody] Carro item)
+        public IActionResult Put([FromBody] Estacionamento item)
         {
             repository.Update(item);
             return Ok(new

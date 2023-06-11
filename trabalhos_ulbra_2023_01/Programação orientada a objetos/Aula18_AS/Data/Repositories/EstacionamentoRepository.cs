@@ -12,9 +12,9 @@ namespace Aula12_TestandoORM.Data.Repositories
     {
         private readonly MeuContexto context;
 
-        public EstacionamentoRepository(MeuContexto context)
+        public EstacionamentoRepository()
         {
-            this.context = context;
+            this.context = new MeuContexto();
         }
 
         public void Delete(int entityId)
