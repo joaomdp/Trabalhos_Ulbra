@@ -6,5 +6,10 @@ namespace Aula12_TestandoORM.Domain.Entities
     {
         public int Id { get; set; }
         public List<Carro> Carros { get; set; }
+
+        public Estacionamento()
+        {
+            Carros = new List<Carro>();
+        }
     }
 }

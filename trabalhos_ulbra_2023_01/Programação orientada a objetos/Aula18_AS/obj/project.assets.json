@@ -1719,11 +1719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\Aula12_TestandoORM.csproj",
+      "projectUniqueName": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\Aula12_TestandoORM.csproj",
       "projectName": "Aula12_TestandoORM",
-      "projectPath": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\Aula12_TestandoORM.csproj",
+      "projectPath": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\Aula12_TestandoORM.csproj",
       "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\obj\\",
+      "outputPath": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula18_AS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config"

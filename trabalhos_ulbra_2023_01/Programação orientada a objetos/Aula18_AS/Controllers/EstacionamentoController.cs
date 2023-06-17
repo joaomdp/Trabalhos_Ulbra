@@ -29,6 +29,29 @@ namespace Aula18_AS.Controllers
             return repository.GetAll();
         }
 
+        [HttpPost("AdicionarCarro/{estacionamentoId}/{carroId}")]
+        public IActionResult AdicionarCarro(int estacionamentoId, int carroId)
+        {
+            var estacionamento = repository.GetById(estacionamentoId);
+            var carroRepository = new CarroRepository();
+            var carro = carroRepository.GetById(carroId);
+
+            if (estacionamento == null || carro == null)
+            {
+                return BadRequest("Estacionamento ou Carro não encontrado");
+            }
+
+            estacionamento.Carros.Add(carro);
+            repository.Update(estacionamento);
+
+            return Ok(new
+            {
+                StatusCode = 200,
+                message = "Carro adicionado ao estacionamento com sucesso",
+                estacionamento
+            });
+        }
+
 
         [HttpGet("{id}")]
         public Estacionamento Get(int id)

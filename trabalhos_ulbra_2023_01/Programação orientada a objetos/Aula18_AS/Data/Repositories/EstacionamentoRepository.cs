@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Aula12_TestandoORM.Data.Context;
 using Aula12_TestandoORM.Domain.Entities;
 using Aula12_TestandoORM.Domain.interfaces;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Aula12_TestandoORM.Data.Repositories
 {

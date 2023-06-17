@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Aula12_TestandoORM.Data.Context;
 using Aula12_TestandoORM.Domain.Entities;
 using Aula12_TestandoORM.Domain.interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aula12_TestandoORM.Data.Repositories
 {
@@ -27,22 +28,24 @@ namespace Aula12_TestandoORM.Data.Repositories
 
         public IList<Carro> GetAll()
         {
-            return context.Carros.ToList();
+            return context.Carros.Include(x=>x.Estacionamento).ToList();
         }
 
         public Carro GetById(int entityId)
         {
-            return context.Carros.SingleOrDefault(x=>x.Id == entityId);
+            return context.Carros.Include(x=>x.Estacionamento).SingleOrDefault(x=>x.Id == entityId);
         }
 
         public void Save(Carro entity)
         {
+            entity.Estacionamento = context.Estacionamentos.SingleOrDefault(x=>x.Id == entity.Estacionamento.Id);
             context.Add(entity);
             context.SaveChanges();
         }
 
         public void Update(Carro entity)
         {
+            entity.Estacionamento = context.Estacionamentos.SingleOrDefault(x=>x.Id == entity.Estacionamento.Id);
             context.Carros.Update(entity);
             context.SaveChanges();
         }
