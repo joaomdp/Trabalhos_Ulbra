@@ -1857,11 +1857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\Aula19_AS_TESTE.csproj",
+      "projectUniqueName": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\Aula19_AS_TESTE.csproj",
       "projectName": "Aula19_AS_TESTE",
-      "projectPath": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\Aula19_AS_TESTE.csproj",
+      "projectPath": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\Aula19_AS_TESTE.csproj",
       "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\obj\\",
+      "outputPath": "c:\\Users\\joaom\\Desktop\\Trabalhos_Ulbra\\trabalhos_ulbra_2023_01\\Programação orientada a objetos\\Aula19_AS_Teste\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config"

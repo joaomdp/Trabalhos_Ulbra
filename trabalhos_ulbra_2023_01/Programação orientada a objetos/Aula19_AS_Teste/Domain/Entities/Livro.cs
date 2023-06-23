@@ -10,7 +10,7 @@ namespace Aula19_AS_Teste
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
-        public string Genero { get; set; }
+        public bool Emprestado { get; set; } 
         public ICollection<LivroAutor> Autores { get; set; }
     }
 }

@@ -15,12 +15,18 @@ namespace Aula19_AS_Teste
 
         public List<Usuario> GetAll()
         {
-            return _context.Usuarios.Include(u => u.Emprestimos).ToList();
+            return _context.Usuarios
+                .Include(u => u.Emprestimos)
+                .ThenInclude(e => e.Livro)
+                .ToList();
         }
 
         public Usuario GetById(int id)
         {
-            return _context.Usuarios.Include(u => u.Emprestimos).FirstOrDefault(u => u.Id == id);
+            return _context.Usuarios
+                .Include(u => u.Emprestimos)
+                .ThenInclude(e => e.Livro)
+                .FirstOrDefault(u => u.Id == id);
         }
 
         public void Create(Usuario usuario)

@@ -15,12 +15,12 @@ namespace Aula19_AS_Teste
 
         public List<Autor> GetAll()
         {
-            return _context.Autores.ToList();
+            return _context.Autores.Include(a => a.Livros).ToList();
         }
 
         public Autor GetById(int id)
         {
-            return _context.Autores.Find(id);
+            return _context.Autores.Include(a => a.Livros).FirstOrDefault(a => a.Id == id);
         }
 
         public void Create(Autor autor)

@@ -12,6 +12,8 @@ namespace Aula19_AS_Teste
         public DbSet<Livro> Livros { get; set; }
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Emprestimo> Emprestimos { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

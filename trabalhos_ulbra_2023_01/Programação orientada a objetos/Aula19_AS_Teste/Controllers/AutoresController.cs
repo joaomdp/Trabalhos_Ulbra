@@ -3,18 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Aula19_AS_Teste.Domain.DTOs;
 
-namespace Aula19_AS_Teste
+namespace Aula19_AS_Teste.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class AutoresController : ControllerBase
     {
         private readonly IAutorService _autorService;
+        private readonly ILivroService _livroService;
         private readonly IMapper _mapper;
 
-        public AutoresController(IAutorService autorService, IMapper mapper)
+        public AutoresController(IAutorService autorService, ILivroService livroService, IMapper mapper)
         {
             _autorService = autorService;
+            _livroService = livroService;
             _mapper = mapper;
         }
 
@@ -31,9 +33,8 @@ namespace Aula19_AS_Teste
         {
             var autor = _autorService.GetAutorById(id);
             if (autor == null)
-            {
                 return NotFound();
-            }
+
             var autorDTO = _mapper.Map<AutorDTO>(autor);
             return Ok(autorDTO);
         }
@@ -43,6 +44,7 @@ namespace Aula19_AS_Teste
         {
             var autor = _mapper.Map<Autor>(autorDTO);
             _autorService.CreateAutor(autor);
+
             return Ok(new
             {
                 StatusCode = 200,
@@ -57,6 +59,7 @@ namespace Aula19_AS_Teste
             var autor = _mapper.Map<Autor>(autorDTO);
             autor.Id = id;
             _autorService.UpdateAutor(autor);
+
             return Ok(new
             {
                 StatusCode = 200,
@@ -69,6 +72,7 @@ namespace Aula19_AS_Teste
         public IActionResult DeleteAutor(int id)
         {
             _autorService.DeleteAutor(id);
+
             return Ok(new
             {
                 StatusCode = 200,

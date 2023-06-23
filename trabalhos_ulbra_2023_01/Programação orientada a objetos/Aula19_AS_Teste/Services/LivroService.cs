@@ -6,10 +6,12 @@ namespace Aula19_AS_Teste
     public class LivroService : ILivroService
     {
         private readonly ILivroRepository _livroRepository;
+        private readonly IAutorRepository _autorRepository;
 
-        public LivroService(ILivroRepository livroRepository)
+        public LivroService(ILivroRepository livroRepository, IAutorRepository autorRepository)
         {
             _livroRepository = livroRepository;
+            _autorRepository = autorRepository;
         }
 
         public List<Livro> GetAllLivros()
@@ -35,6 +37,21 @@ namespace Aula19_AS_Teste
         public void DeleteLivro(int id)
         {
             _livroRepository.Delete(id);
+        }
+
+        public void AdicionarAutor(Livro livro, Autor autor)
+        {
+            var livroAutor = new LivroAutor
+            {
+                LivroId = livro.Id,
+                AutorId = autor.Id
+            };
+
+            livro.Autores.Add(livroAutor);
+            _livroRepository.Update(livro);
+
+            autor.Livros.Add(livroAutor);
+            _autorRepository.Update(autor);
         }
     }
 }

@@ -9,5 +9,6 @@ namespace Aula19_AS_Teste
         void CreateLivro(Livro livro);
         void UpdateLivro(Livro livro);
         void DeleteLivro(int id);
+        void AdicionarAutor(Livro livro, Autor autor);
     }
 }

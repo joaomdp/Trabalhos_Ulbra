@@ -48,7 +48,7 @@ namespace Aula12_TestandoORM.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Emprestimo");
+                    b.ToTable("Emprestimos");
                 });
 
             modelBuilder.Entity("Aula19_AS_Teste.Livro", b =>
@@ -57,8 +57,8 @@ namespace Aula12_TestandoORM.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Genero")
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("Emprestado")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Titulo")
                         .HasColumnType("TEXT");
