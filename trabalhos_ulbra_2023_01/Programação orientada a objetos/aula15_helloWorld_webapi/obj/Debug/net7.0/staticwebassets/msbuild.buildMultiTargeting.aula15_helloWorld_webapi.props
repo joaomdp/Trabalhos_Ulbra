@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\aula15_helloWorld_webapi.props" />
-</Project>

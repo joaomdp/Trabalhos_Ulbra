@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\aula15_helloWorld_webapi.props" />
-</Project>

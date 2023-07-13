@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Aula16_TesteWebFirst.props" />
-</Project>
