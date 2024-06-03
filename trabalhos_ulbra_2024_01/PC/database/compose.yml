@@ -1,0 +1,26 @@
+version: "3.8" #definir a versao que sera usada na aplicacao
+services: # definir qual container que vai rodar 
+    redis: #container definido (encontrados no docker hub)
+        image: redis:latest #"versao" do container escolhido
+        container_name: 'redis' #nome do container  , pode ser qualquer um
+        ports: #portas de conexao 
+            - 8888:6379 #esquerda: porta da maquina local/ direita: porta padrao da imagem escolhida (no caso a redis)
+        networks: #permite que um usuario vincule um conteiner Docker a quantas redes ele precisar
+            - default #sempre default 
+
+    postgres: 
+        image: postgres:alpine
+        container_name: 'postgres'
+        ports:
+            - 9999:5432
+        volumes:
+            - ./database/postgres:/var/lib/postgresql
+        enviroment:
+            - POSTGRES_PASSWORD: 1q2w3e4r5t
+        networks:
+            - default
+networks:
+    default:
+        driver: bridge #conectar os container entre si, para que fiquem visiveis entre si
+
+        
