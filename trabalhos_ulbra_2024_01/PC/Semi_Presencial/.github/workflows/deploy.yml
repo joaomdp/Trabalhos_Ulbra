@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Listar todos os arquivos do projeto
+      run: ls -la
+
+    - name: Transferir os arquivos para a VM
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.IP }} # Endereço IP da sua VM
+        username: ubuntu # Nome de usuário da sua VM
+        key: ${{ secrets.SSH_PRIVATE_KEY }} # Chave SSH privada
+        source: "*" # Copia todos os arquivos
+        target: "/home/ubuntu" # Caminho na sua VM onde você deseja que o arquivo seja transferido
