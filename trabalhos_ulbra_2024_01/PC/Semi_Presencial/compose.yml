@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+    apache:
+        image: httpd:alpine
+        container_name: 'Apache'
+        ports:
+            - 80:80
+        volumes:
+            - ./htdocs:/usr/local/apache2/htdocs/
+        networks:
+            - minhaConexaoPadrao
+networks:
+    minhaConexaoPadrao:
+        driver: bridge
