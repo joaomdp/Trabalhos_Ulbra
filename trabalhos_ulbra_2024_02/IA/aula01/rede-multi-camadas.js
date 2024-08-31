@@ -1,4 +1,4 @@
-class Entrada {
+  class Entrada {
     valorEntrada = 0
     peso = 0
 }
