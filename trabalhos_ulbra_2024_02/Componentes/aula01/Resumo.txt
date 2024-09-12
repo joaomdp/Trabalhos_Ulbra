@@ -1,0 +1,14 @@
+Resumo: HTML, CSS e JavaScript
+HTML: 
+é a linguagem de marcação usada para estruturar o conteúdo na web. Ele define a hierarquia de elementos como cabeçalhos,
+parágrafos, links, imagens, e outros componentes de uma página. O HTML usa tags para delimitar elementos, como <div>, <p>, <a>, entre outros.
+
+CSS: 
+é a linguagem usada para descrever a apresentação visual de um documento HTML. 
+Ele define como os elementos HTML devem ser exibidos em termos de cores, tamanhos, posicionamentos, espaçamentos,
+e outros aspectos visuais. Com CSS, é possível estilizar e ajustar o layout de uma página de forma responsiva e customizada.
+
+JavaScript:
+é uma linguagem de programação que adiciona interatividade e dinamismo às páginas web. Com ele, 
+é possível manipular o DOM (Document Object Model), validar formulários, criar animações e gerenciar eventos 
+(como cliques e movimentação do mouse). Ele roda no lado do cliente (navegador), permitindo que os usuários interajam de maneira dinâmica com a interface de um site.
