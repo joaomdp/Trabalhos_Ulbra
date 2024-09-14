@@ -1,8 +1,101 @@
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: black;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0d1f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1b1e34;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #0b0d1f;
+}
+
+.hero {
+  height: 80vh;
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #c4c4c4;
+}
+
+footer {
+  background-color: #1b1e34;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
