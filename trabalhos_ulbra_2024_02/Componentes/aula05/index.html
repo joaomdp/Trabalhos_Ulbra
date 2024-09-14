@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pessoas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Pessoas</h1>
+    <ul id="idDesejado"></ul>
+
+    <script>
+        const data = [
+            { nome: "Daniel", idade: 25 },
+            { nome: "João", idade: 30 },
+            { nome: "Maria", idade: 22 },
+            { nome: "Ana", idade: 28 }
+        ];
+
+        function gerarListaPessoas() {
+            const listaElement = document.getElementById("idDesejado");
+
+            const listaHTML = data.map(item => {
+                return `<li>${item.nome} - ${item.idade} anos</li>`;
+            }).join(''); 
+
+         
+            listaElement.innerHTML = listaHTML;
+        }
+
+        gerarListaPessoas();
+    </script>
+
+</body>
+</html>
